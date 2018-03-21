@@ -2,3 +2,4 @@
 
 ## Completed DSA Challenges and Implementations
 1. [ReverseAnArray](/Challenges/ReverseAnArray)
+2. [ShiftArray](/Challenges/ShiftArray)
