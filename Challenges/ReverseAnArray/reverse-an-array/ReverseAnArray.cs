@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace reverse_an_array
+namespace ReverseAnArray
 {
     class Program
     {
@@ -36,14 +36,29 @@ namespace reverse_an_array
             // "Passed test" on success.
             for (int i = 0; i < _testCases.Length; i++)
             {
-                if (!reverseArray(_testCases[i]).SequenceEqual(_testExpected[i]))
-                {
-                    Console.WriteLine($"Failed test {i}!");
-                }
-                else
+                // Print the original and reversed versions of this test case
+                Console.WriteLine($"Test {i} original array: ");
+                Console.WriteLine($"[{string.Join(", ", _testCases[i])}]");
+                
+                int[] reversedArray = ReverseArray(_testCases[i]);
+                Console.WriteLine();
+                Console.WriteLine($"Test {i} reversed array: ");
+                Console.WriteLine($"[{string.Join(", ", reversedArray)}]");
+                Console.WriteLine();
+
+                // Write whether this test has passed or not
+                if (reversedArray.SequenceEqual(_testExpected[i]))
                 {
                     Console.WriteLine($"Passed test {i}!");
                 }
+                else
+                {
+                    Console.WriteLine($"Failed test {i}!");
+                }
+
+                Console.WriteLine("\nPlease press a key to perform next test...");
+                Console.ReadKey();
+                Console.WriteLine();
             }
 
             Console.WriteLine("\nPlease press any key to exit...");
@@ -56,7 +71,7 @@ namespace reverse_an_array
         /// <typeparam name="T">The type of array values</typeparam>
         /// <param name="arrayToReverse">The array to non-destructively reverse.</param>
         /// <returns>An array containing the same values as <paramref name="arrayToReverse"/> but in reverse order.</returns>
-        public static T[] reverseArray<T>(T[] arrayToReverse)
+        public static T[] ReverseArray<T>(T[] arrayToReverse)
         {
             T[] destArray = new T[arrayToReverse.Length];
 

@@ -1,3 +1,4 @@
-# data-structures-and-algorithms
+# Data Structures and Algorithms
 
-Please check the subdirectories and branches of this repository for each individual whiteboard challenge.
+## Completed DSA Challenges and Implementations
+1. [ReverseAnArray](/Challenges/ReverseAnArray)
