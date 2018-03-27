@@ -10,7 +10,7 @@ namespace SinglyLinkedList
         /// Represents the Node object at the front of the linked
         /// list. If this is null, then the linked list is empty.
         /// </summary>
-        public Node Head { get; protected set; }
+        public Node Head { get; set; }
 
         /// <summary>
         /// Adds a new node to the front of the linked list
@@ -25,7 +25,7 @@ namespace SinglyLinkedList
             // a new node containing the provided value
             if (Head == null)
             {
-                Head = new Node(value);
+                return Head = new Node(value);
             }
 
             // Create a new node pointing to the current head to

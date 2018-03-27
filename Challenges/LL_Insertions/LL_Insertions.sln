@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LL_Insertions", "LL_Insertions\LL_Insertions.csproj", "{8ABEA57A-57D8-43C3-AA6C-ED77F6B44079}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SinglyLinkedList", "..\..\Data Structures\Implementations\SinglyLinkedList\SinglyLinkedList\SinglyLinkedList.csproj", "{DB000615-B90C-4D24-B158-9D8623ECC28C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LL_InsertionsTest", "LL_InsertionsTest\LL_InsertionsTest.csproj", "{34034DE0-FD8C-44E8-B7F9-8A568BE4473E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6CDB448D-0B97-4708-998F-44713D5EFA14}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ABEA57A-57D8-43C3-AA6C-ED77F6B44079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABEA57A-57D8-43C3-AA6C-ED77F6B44079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABEA57A-57D8-43C3-AA6C-ED77F6B44079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABEA57A-57D8-43C3-AA6C-ED77F6B44079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB000615-B90C-4D24-B158-9D8623ECC28C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB000615-B90C-4D24-B158-9D8623ECC28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB000615-B90C-4D24-B158-9D8623ECC28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB000615-B90C-4D24-B158-9D8623ECC28C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34034DE0-FD8C-44E8-B7F9-8A568BE4473E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34034DE0-FD8C-44E8-B7F9-8A568BE4473E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34034DE0-FD8C-44E8-B7F9-8A568BE4473E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34034DE0-FD8C-44E8-B7F9-8A568BE4473E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBED7774-96E8-4CAB-A2D4-B717A552478D}
+	EndGlobalSection
+EndGlobal
