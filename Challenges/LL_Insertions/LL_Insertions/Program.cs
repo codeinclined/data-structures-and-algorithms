@@ -166,7 +166,7 @@ namespace LL_Insertions
         /// Utility method to pretty print all of a linked list's contents to the console
         /// </summary>
         /// <param name="sll">The linked list to print to console</param>
-        static void PrintLinkedList(SinglyLinkedList.SinglyLinkedList sll)
+        public static void PrintLinkedList(SinglyLinkedList.SinglyLinkedList sll)
         {
             Console.Write("head -> ");
 
