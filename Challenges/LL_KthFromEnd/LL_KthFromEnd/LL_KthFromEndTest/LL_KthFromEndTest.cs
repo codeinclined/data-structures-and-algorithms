@@ -24,6 +24,8 @@ namespace LL_KthFromEndTest
             }
 
             // Assert
+            // Our seedValues array matches the length and ordering of the linked list,
+            // thus indexing from the end of the array should match KthFromEnd on the linked list
             Assert.Equal(seedValues[seedValues.Length - 1 - k], KthFromEnd(sll, k));
         }
     }
