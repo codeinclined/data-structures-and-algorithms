@@ -22,7 +22,7 @@ class as well as the methods created in previous challenges. ​
     Input                                Args   Output
     head -> [1]-> [3]-> [8]-> [2]-> X    0      [2]->
     head -> [1]-> [3]-> [8]-> [2]-> X    2      [3]->
-    head -> [1]-> [3]-> [8]-> [2]-> X    0      Exception
+    head -> [1]-> [3]-> [8]-> [2]-> X    6      Exception
 
 ## Solution
 
