@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Data Structures\Implementations\SinglyLinkedList\SinglyLinkedList\SinglyLinkedList.csproj" />
+    <ProjectReference Include="..\..\..\LL_Insertions\LL_Insertions\LL_Insertions.csproj" />
   </ItemGroup>
 
 </Project>
