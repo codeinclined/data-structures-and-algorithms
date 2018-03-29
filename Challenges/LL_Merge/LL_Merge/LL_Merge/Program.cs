@@ -4,7 +4,7 @@ using static LL_Insertions.Program;
 
 namespace LL_Merge
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -54,7 +54,7 @@ namespace LL_Merge
             PrintLinkedList(mergedList);
         }
 
-        static Node MergeLists(SinglyLinkedList.SinglyLinkedList listA,
+        public static Node MergeLists(SinglyLinkedList.SinglyLinkedList listA,
             SinglyLinkedList.SinglyLinkedList listB)
         {
             Node curNodeA = listA.Head;
