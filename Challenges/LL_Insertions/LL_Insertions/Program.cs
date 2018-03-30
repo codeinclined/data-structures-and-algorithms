@@ -189,6 +189,8 @@ namespace LL_Insertions
         /// <returns>The new node</returns>
         public static Node Append(SinglyLinkedList.SinglyLinkedList sll, int value)
         {
+            sll.Length++;
+
             // If the linked list is empty than just set head to a new Node object containing value
             if (sll.Head == null)
             {
@@ -219,9 +221,11 @@ namespace LL_Insertions
             {
                 throw new ArgumentException("Could not find value within linked list", nameof(value));
             }
+
             // If the head is value, then the Add method will do the same thing as this method would
             if (sll.Head.Value == value)
             {
+                sll.Length++;
                 return sll.Add(newValue);
             }
 
@@ -233,6 +237,7 @@ namespace LL_Insertions
                 {
                     Node newNode = new Node(newValue, currentNode.Next);
                     currentNode.Next = newNode;
+                    sll.Length++;
                     return newNode;
                 }
 
@@ -265,6 +270,7 @@ namespace LL_Insertions
                 {
                     Node newNode = new Node(newValue, currentNode.Next);
                     currentNode.Next = newNode;
+                    sll.Length++;
                     return newNode;
                 }
 
