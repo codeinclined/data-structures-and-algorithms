@@ -23,7 +23,7 @@ namespace LL_FindLoop
             Console.ForegroundColor = ConsoleColor.White;
             PrintLinkedList(sll);
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"FindLoop() result: {FindLoop(sll)}");
+            Console.WriteLine($"HasLoop() result: {HasLoop(sll)}");
 
             // Set up second linked list demo
             sll = new SinglyLinkedList.SinglyLinkedList();
@@ -41,7 +41,7 @@ namespace LL_FindLoop
             Console.WriteLine("               ^     v");
             Console.WriteLine("              [5] <-[3]");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"FindLoop() result: {FindLoop(sll)}");
+            Console.WriteLine($"HasLoop() result: {HasLoop(sll)}");
 
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\nPlease press any key to exit this program...");
@@ -49,12 +49,11 @@ namespace LL_FindLoop
         }
 
         /// <summary>
-        /// Discovers loops within a linked list by checking a counter against
-        /// the linked list's defined length.
+        /// Discovers loops within a linked list
         /// </summary>
         /// <param name="sll">A singly linked list to test for loops within</param>
         /// <returns>True when a loop exists; false otherwise</returns>
-        static public bool FindLoop(SinglyLinkedList.SinglyLinkedList sll)
+        static public bool HasLoop(SinglyLinkedList.SinglyLinkedList sll)
         {
             int counter = 0;
             Node currentNode = sll.Head;

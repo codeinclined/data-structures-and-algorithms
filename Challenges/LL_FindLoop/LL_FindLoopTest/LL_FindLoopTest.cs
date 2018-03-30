@@ -14,7 +14,7 @@ namespace LL_FindLoopTest
             // Arrange accomplished within FindLoopTestData enumerator for four test cases
 
             // Act
-            bool actualResult = FindLoop(sll);
+            bool actualResult = HasLoop(sll);
 
             // Assert
             Assert.Equal(expectedResult, actualResult);
