@@ -4,8 +4,12 @@ using static LL_Insertions.Program;
 
 namespace LL_FindLoop
 {
-    class Program
+    public class Program
     {
+        /// <summary>
+        /// Entry point for the linked list loop testing demo
+        /// </summary>
+        /// <param name="args">Command line arguments</param>
         static void Main(string[] args)
         {
             // Set up first linked list demo
@@ -44,6 +48,12 @@ namespace LL_FindLoop
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Discovers loops within a linked list by checking a counter against
+        /// the linked list's defined length.
+        /// </summary>
+        /// <param name="sll">A singly linked list to test for loops within</param>
+        /// <returns>True when a loop exists; false otherwise</returns>
         static public bool FindLoop(SinglyLinkedList.SinglyLinkedList sll)
         {
             int counter = 0;
