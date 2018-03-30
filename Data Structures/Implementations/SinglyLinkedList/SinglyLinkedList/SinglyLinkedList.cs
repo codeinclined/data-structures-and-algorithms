@@ -13,6 +13,11 @@ namespace SinglyLinkedList
         public Node Head { get; set; }
 
         /// <summary>
+        /// Represents the number of nodes added to this linked list
+        /// </summary>
+        public int Length { get; set; } = 0;
+
+        /// <summary>
         /// Adds a new node to the front of the linked list
         /// and returns a reference to that newly added node.
         /// </summary>
@@ -21,6 +26,8 @@ namespace SinglyLinkedList
         /// <returns>A reference to the newly added node.</returns>
         public Node Add(int value)
         {
+            Length++;
+
             // If our linked list is empty, simply set Head to
             // a new node containing the provided value
             if (Head == null)
