@@ -101,7 +101,7 @@ namespace StackAndQueueTest
             int peekedValue = myStack.Peek();
 
             // Assert
-            Assert.Equal(seedValues[seedValues.Length - 1], myStack.Peek());
+            Assert.Equal(seedValues[seedValues.Length - 1], peekedValue);
         }
 
         [Theory]
