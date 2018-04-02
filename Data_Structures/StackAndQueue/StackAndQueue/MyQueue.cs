@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace StackAndQueue
 {
-    class MyQueue<T>
+    public class MyQueue<T>
     {
         /// <summary>
         /// Reference to the front Node of the queue. For
