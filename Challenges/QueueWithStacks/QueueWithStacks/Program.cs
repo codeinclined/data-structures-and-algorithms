@@ -5,12 +5,34 @@ namespace QueueWithStacks
 {
     public class Program
     {
+        /// <summary>
+        /// Entry point to demonstration program
+        /// </summary>
+        /// <param name="args">Command line arguments</param>
         static void Main(string[] args)
         {
             MyStack<int> inStack = new MyStack<int>();
             MyStack<int> outStack = new MyStack<int>();
 
+            int[] seedValues = new int[] { 2, 3, 5, 7, 11, 13 };
 
+            Console.WriteLine("Creating queue containing the following values:");
+
+            Console.WriteLine($"Front [{string.Join(", ", seedValues)}] Back");
+
+            foreach (int value in seedValues)
+            {
+                Enqueue(inStack, outStack, value);
+            }
+
+            Console.WriteLine("\nDequeueing values one at a time (FIFO order):");
+
+            while (inStack.Length > 0 || outStack.Length > 0)
+            {
+                Console.WriteLine(Dequeue(inStack, outStack));
+            }
+
+            Console.WriteLine("\nPlease press any key to exit this program...");
             Console.ReadKey();
         }
 
