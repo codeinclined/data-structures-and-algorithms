@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using StackAndQueue;
 
 namespace QueueWithStacks
@@ -30,6 +31,7 @@ namespace QueueWithStacks
             while (inStack.Length > 0 || outStack.Length > 0)
             {
                 Console.WriteLine(Dequeue(inStack, outStack));
+                Thread.Sleep(650);
             }
 
             Console.WriteLine("\nPlease press any key to exit this program...");
