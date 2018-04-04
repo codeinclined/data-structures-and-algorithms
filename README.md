@@ -11,3 +11,4 @@
 8. [LL_Merge](/Challenges/LL_Merge)
 9. [LL_FindLoop](/Challenges/LL_FindLoop)
 10. [StackAndQueue](/Data_Structures/StackAndQueue)
+11. [FifoAnimalShelter](/Challenges/FifoAnimalShelter)
