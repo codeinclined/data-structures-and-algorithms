@@ -7,7 +7,38 @@ namespace FifoAnimalShelter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MyQueue<Cat> catQueue = new MyQueue<Cat>();
+            MyQueue<Dog> dogQueue = new MyQueue<Dog>();
+            long runningSerial = 0;
+
+            Console.WriteLine("Adding cats and dogs to the animal shelter:\n");
+
+            // Build up the animal shelter with alternating cats and dogs for
+            // a total of 10 animals
+            for (int i = 0; i < 10; i += 2)
+            {
+                Console.WriteLine($"Enqueueing cat with serial# {i}");
+                Enqueue(catQueue, dogQueue, ref runningSerial, new Cat());
+
+                Console.WriteLine($"Enqueueing dog with serial# {i + 1}");
+                Enqueue(catQueue, dogQueue, ref runningSerial, new Dog());
+            }
+
+            Console.WriteLine("\nDequeueing animals from the animal shelter " +
+                "in first in, first out order (FIFO):\n");
+
+            // Demonstrate correct FIFO through returned serial numbers
+            Console.WriteLine("Dequeueing the cat which has waiting the longest:" +
+                $"\tserial# {Dequeue(catQueue, dogQueue, "cat").SerialNumber}");
+            Console.WriteLine("Dequeueing the cat which has waiting the longest:" +
+                $"\tserial# {Dequeue(catQueue, dogQueue, "cat").SerialNumber}");
+            Console.WriteLine("Dequeueing the dog which has waiting the longest:" +
+                $"\tserial# {Dequeue(catQueue, dogQueue, "dog").SerialNumber}");
+            Console.WriteLine("Dequeueing the animal which has waiting the longest:" +
+                $"\tserial# {Dequeue(catQueue, dogQueue, "").SerialNumber}");
+
+            Console.WriteLine("\nPlease press any key to exit this program...");
+            Console.ReadKey();
         }
 
         /// <summary>
