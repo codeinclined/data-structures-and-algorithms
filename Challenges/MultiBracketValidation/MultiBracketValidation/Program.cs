@@ -7,6 +7,33 @@ namespace MultiBracketValidation
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("This challenge validates matching brackets within strings");
+            Console.WriteLine(
+                @"The following characters are validated: '[', '(', '{', '], '), '}'");
+            Console.WriteLine();
+
+            string[] testStrings =
+            {
+                "{}",
+                "()[[Extra Characters]]",
+                "(){}[[]]",
+                "{}(Code)[Fellows](())",
+                "(])",
+                "[(])",
+                "{[(])",
+                "{foo)[bar}",
+                "{end}[not](closed",
+                "This string has no brackets! Such wow! Very unit test!"
+            };
+
+            foreach (string testString in testStrings)
+            {
+                Console.WriteLine(
+                    $"The following \"{testString}\" is {(MultiBracketValidation(testString) ? "valid" : "invalid")}.");
+            }
+
+            Console.WriteLine("\nPlease press any key to exit this program...");
+            Console.ReadKey();
         }
 
         public static bool MultiBracketValidation(string input)
