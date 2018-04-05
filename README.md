@@ -13,3 +13,4 @@
 10. [StackAndQueue](/Data_Structures/StackAndQueue)
 11. [QueueWithStacks](/Challenges/QueueWithStacks)
 12. [FifoAnimalShelter](/Challenges/FifoAnimalShelter)
+13. [MultiBracketValidation](/Challenges/MultiBracketValidation)
