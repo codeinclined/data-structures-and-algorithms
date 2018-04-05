@@ -12,3 +12,4 @@
 9. [LL_FindLoop](/Challenges/LL_FindLoop)
 10. [StackAndQueue](/Data_Structures/StackAndQueue)
 11. [QueueWithStacks](/Challenges/QueueWithStacks)
+12. [FifoAnimalShelter](/Challenges/FifoAnimalShelter)
