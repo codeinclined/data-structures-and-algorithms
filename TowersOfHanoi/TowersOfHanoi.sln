@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TowersOfHanoi", "TowersOfHa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueue", "..\Data_Structures\StackAndQueue\StackAndQueue\StackAndQueue.csproj", "{5B544F1B-BE03-444D-BC33-87E5341CD47A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TowersOfHanoiTest", "TowersOfHanoiTest\TowersOfHanoiTest.csproj", "{CCF92963-3C1E-448C-BB09-502626595F24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5B544F1B-BE03-444D-BC33-87E5341CD47A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B544F1B-BE03-444D-BC33-87E5341CD47A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B544F1B-BE03-444D-BC33-87E5341CD47A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF92963-3C1E-448C-BB09-502626595F24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF92963-3C1E-448C-BB09-502626595F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF92963-3C1E-448C-BB09-502626595F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF92963-3C1E-448C-BB09-502626595F24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,7 +3,7 @@ using StackAndQueue;
 
 namespace TowersOfHanoi
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -30,11 +30,19 @@ namespace TowersOfHanoi
             Console.ReadKey();
         }
 
-        static MyQueue<string> TowersOfHanoi(int n)
+        /// <summary>
+        /// Solves the Towers of Hanoi problem with n number of disks and returns
+        /// a queue of strings containing descriptions of each move
+        /// </summary>
+        /// <param name="n">The number of disks in the Towers of Hanoi</param>
+        /// <returns>A queue of strings describing each step taken to solve
+        /// the Towers of Hanoi for n disks</returns>
+        public static MyQueue<string> TowersOfHanoi(int n)
         {
             MyQueue<string> moves = new MyQueue<string>();
             MyStack<int>[] stacks = new MyStack<int>[3] { new MyStack<int>(), new MyStack<int>(), new MyStack<int>() };
 
+            // Fill stack A (stacks[0]) with disks in the correct order
             for (int i = n; i > 0; i--)
             {
                 stacks[0].Push(i);
@@ -66,6 +74,7 @@ namespace TowersOfHanoi
                 int source = -1;
                 int destination = -1;
 
+                // Store the values and evenness of each stack's top disk
                 stackValues[0] = stacks[0].Length > 0 ? stacks[0].Peek() : 0;
                 stackValues[1] = stacks[1].Length > 0 ? stacks[1].Peek() : 0;
                 stackValues[2] = stacks[2].Length > 0 ? stacks[2].Peek() : 0;
@@ -89,6 +98,7 @@ namespace TowersOfHanoi
                                     break;
                                 }
 
+                                // If it's a legal move, then set source and destination
                                 if (stacksEven[i] != stacksEven[j] || stackValues[j] < 1)
                                 {
                                     source = i;
@@ -99,13 +109,16 @@ namespace TowersOfHanoi
                     }
                 }
 
+                // If a legal move has been made...
                 if (source >= 0 && destination >= 0)
                 {
-                    // Adding 'A' (0x41) and i or j will map to 'A', 'B', or 'C'
+                    // Adding 'A' (0x41) and the source / destination will
+                    // map to 'A' (0x41), 'B' (0x42), or 'C' (0x43)
                     char startStack = Convert.ToChar('A' + source);
                     char endStack = Convert.ToChar('A' + destination);
-                    int movingDisk = stacks[source].Pop();
 
+                    // Commit the move and enqueue a description of that move
+                    int movingDisk = stacks[source].Pop();
                     stacks[destination].Push(movingDisk);
                     lastDisk = movingDisk;
                     moves.Enqueue($"Disk {movingDisk} moved from {startStack} to {endStack}.");
