@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Data_Structures\StackAndQueue\StackAndQueue\StackAndQueue.csproj" />
+    <ProjectReference Include="..\..\..\Data_Structures\StackAndQueue\StackAndQueue\StackAndQueue.csproj" />
   </ItemGroup>
 
 </Project>

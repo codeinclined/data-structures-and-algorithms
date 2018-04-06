@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Data_Structures\StackAndQueue\StackAndQueue\StackAndQueue.csproj" />
+    <ProjectReference Include="..\..\..\Data_Structures\StackAndQueue\StackAndQueue\StackAndQueue.csproj" />
     <ProjectReference Include="..\TowersOfHanoi\TowersOfHanoi.csproj" />
   </ItemGroup>
 
