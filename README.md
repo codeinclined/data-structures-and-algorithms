@@ -15,3 +15,4 @@
 12. [FifoAnimalShelter](/Challenges/FifoAnimalShelter)
 13. [MultiBracketValidation](/Challenges/MultiBracketValidation)
 14. [TowersOfHanoi](/Challenges/TowersOfHanoi)
+15. [BinaryTree](/Data_Structures/BinaryTree)
