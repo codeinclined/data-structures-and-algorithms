@@ -9,6 +9,10 @@ the node's value is changed to "FizzBuzz". A demonstration method is provided
 in the Program class' Main method as well as three test cases tested via
 an xUnit Theory.
 
+This implementation takes O(n) time and space due to the recursive method
+chosen. Each push onto the call stack requires an additional set of local
+variables to be stored, and each node will be touched in the process.
+
 ## Challenge
 
 - Write a function called FizzBuzzTree which takes a tree as an argument.
