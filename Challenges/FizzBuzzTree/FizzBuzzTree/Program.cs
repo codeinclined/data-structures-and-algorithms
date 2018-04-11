@@ -12,6 +12,9 @@ namespace FizzBuzzTree
             // test tree data
             TreeTestData testData = new TreeTestData();
 
+            // For each tree returned from the testData enumerator, display a demo
+            // of performing in-order traversal both before and after performing
+            // FizzBuzzTree on that tree.
             foreach (Tree<string> tree in testData)
             {
                 Console.WriteLine("In order traversal of source tree:");
@@ -81,12 +84,14 @@ namespace FizzBuzzTree
         /// <summary>
         /// Performs in-order traversal of the provided tree of strings that can
         /// be converted to System.Int32, checking the converted values against
-        /// FizzBuzz rules.
+        /// FizzBuzz rules. Will throw an exception if any of the tree's nodes
+        /// cannot be converted from System.String to System.Int32.
         /// </summary>
         /// <param name="tree">The source binary tree containing strings that can
         /// be converted to int</param>
         /// <returns>The transformed tree containing strings representing whether
-        /// the source nodes are Fizz, Buzz, or FizzBuzz</returns>
+        /// the source nodes are Fizz, Buzz, or FizzBuzz. If none of these, then
+        /// the strings remain untouched.</returns>
         public static Tree<string> FizzBuzzTree(Tree<string> tree)
         {
             FizzBuzzRecursion(tree.Root);
