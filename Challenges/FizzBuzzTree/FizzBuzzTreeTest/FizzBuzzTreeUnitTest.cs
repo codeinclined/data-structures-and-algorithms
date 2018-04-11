@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace FizzBuzzTreeTest
 {
-    public class UnitTest1
+    public class FizzBuzzTreeUnitTest
     {
         // Uses TreeTestData to provide 3 test cases. These appear in
         // the right pane of the test explorer only if you click on
@@ -22,7 +22,7 @@ namespace FizzBuzzTreeTest
             expectedTree.InOrderTraversal(expectedTree.Root, expectedTreeList);
 
             // Act
-            Program.FizzBuzzTree(testTree);
+            testTree = Program.FizzBuzzTree(testTree);
             testTree.InOrderTraversal(testTree.Root, testTreeList);
 
             // Assert
