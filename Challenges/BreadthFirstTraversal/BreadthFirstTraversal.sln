@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreadthFirstTraversal", "BreadthFirstTraversal\BreadthFirstTraversal.csproj", "{9805944F-5F8A-4F82-9011-47DDE4CE21E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTree", "..\Data_Structures\BinaryTree\BinaryTree\BinaryTree.csproj", "{F01F8F35-55AB-45B8-BFCC-664CD3D717BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTree", "..\..\Data_Structures\BinaryTree\BinaryTree\BinaryTree.csproj", "{F01F8F35-55AB-45B8-BFCC-664CD3D717BB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueue", "..\Data_Structures\StackAndQueue\StackAndQueue\StackAndQueue.csproj", "{7033CA4C-7356-4FFF-A578-1329652076D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueue", "..\..\Data_Structures\StackAndQueue\StackAndQueue\StackAndQueue.csproj", "{7033CA4C-7356-4FFF-A578-1329652076D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
