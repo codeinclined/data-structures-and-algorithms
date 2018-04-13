@@ -14,6 +14,10 @@ namespace BreadthFirstTraversal
             Console.ReadKey(true);
         }
 
+        /// <summary>
+        /// Constructs a test binary tree matching the one provided in the challenge prompt
+        /// </summary>
+        /// <returns>A new tree with nodes and structure matching the challenge prompt</returns>
         public static Tree<int> ConstructTestTree()
         {
             Tree<int> tree = new Tree<int>(2);
@@ -33,6 +37,12 @@ namespace BreadthFirstTraversal
             return tree;
         }
 
+        /// <summary>
+        /// Performs breadth first traversal on a binary tree and writes each node's value
+        /// in the order of traversal.
+        /// </summary>
+        /// <typeparam name="T">The type of values held by the provided tree</typeparam>
+        /// <param name="tree">A tree with nodes to be traversed in breadth first order</param>
         public static void BreadthFirstTraversal<T>(Tree<T> tree)
         {
             MyQueue<BinaryTree.Node<T>> queue = new MyQueue<BinaryTree.Node<T>>();
