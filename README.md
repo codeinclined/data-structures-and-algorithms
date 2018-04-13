@@ -18,3 +18,4 @@
 15. [BinaryTree](/Data_Structures/BinaryTree)
 16. [FizzBuzzTree](/Challenges/FizzBuzzTree)
 17. [BreadthFirstTraversal](/Challenges/BreadthFirstTraversal)
+18. [FindMaximumValueBinaryTree](/Challenges/FindMaximumValueBinaryTree)
