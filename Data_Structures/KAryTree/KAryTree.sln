@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KAryTree", "KAryTree\KAryTr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueue", "..\StackAndQueue\StackAndQueue\StackAndQueue.csproj", "{447C15EC-DCDD-49CF-9193-1F1885405D9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KAryTest", "KAryTest\KAryTest.csproj", "{0FB6307A-208E-4DE4-9FDB-4F8139773911}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{447C15EC-DCDD-49CF-9193-1F1885405D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{447C15EC-DCDD-49CF-9193-1F1885405D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{447C15EC-DCDD-49CF-9193-1F1885405D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FB6307A-208E-4DE4-9FDB-4F8139773911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FB6307A-208E-4DE4-9FDB-4F8139773911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FB6307A-208E-4DE4-9FDB-4F8139773911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FB6307A-208E-4DE4-9FDB-4F8139773911}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
