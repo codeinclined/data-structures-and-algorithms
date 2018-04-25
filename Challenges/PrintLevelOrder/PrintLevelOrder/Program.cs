@@ -5,7 +5,7 @@ using StackAndQueue;
 
 namespace PrintLevelOrder
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -62,7 +62,7 @@ namespace PrintLevelOrder
             // The number of items in the current row of nodes
             int rowColumns = 1;
 
-            // Breadth-first Traversal of tree
+            // Breadth-first traversal of tree
             while (nodeQueue.Length > 0)
             {
                 KAryNode<T> currentNode = nodeQueue.Dequeue();

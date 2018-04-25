@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KAryTree", "..\..\Data_Stru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueue", "..\..\Data_Structures\StackAndQueue\StackAndQueue\StackAndQueue.csproj", "{7A434FD5-AA59-47BF-AC7D-142FC6969654}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintLevelOrderTest", "PrintLevelOrderTest\PrintLevelOrderTest.csproj", "{58FB23D5-25B4-4A1C-83AE-ADBAB181E624}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7A434FD5-AA59-47BF-AC7D-142FC6969654}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A434FD5-AA59-47BF-AC7D-142FC6969654}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A434FD5-AA59-47BF-AC7D-142FC6969654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58FB23D5-25B4-4A1C-83AE-ADBAB181E624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58FB23D5-25B4-4A1C-83AE-ADBAB181E624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58FB23D5-25B4-4A1C-83AE-ADBAB181E624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58FB23D5-25B4-4A1C-83AE-ADBAB181E624}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
