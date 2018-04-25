@@ -20,6 +20,32 @@ namespace KAryTest
             Assert.Equal(rootValue, tree.Root.Value);
         }
 
+        [Fact]
+        public void CanAddNodeWithParent()
+        {
+            // Arrange
+            KAryTree<int> tree = new KAryTree<int>(5);
+
+            // Act
+            bool success = tree.Add(10, 5);
+
+            // Assert
+            Assert.True(success);
+        }
+
+        [Fact]
+        public void CannotAddNodeWithoutParent()
+        {
+            // Arrange
+            KAryTree<int> tree = new KAryTree<int>(5);
+
+            // Act
+            bool success = tree.Add(10, 25);
+
+            // Assert
+            Assert.False(success);
+        }
+
         [Theory]
         [InlineData(0)]
         [InlineData(1)]
