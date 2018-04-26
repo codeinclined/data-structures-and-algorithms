@@ -1,6 +1,9 @@
 ﻿using KAryTree;
 using StackAndQueue;
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace FindMatches
 {
@@ -22,45 +25,22 @@ namespace FindMatches
             tree.Add('D', 'B');
             #endregion
 
-            MyQueue<KAryNode<char>> matchesA = FindMatches(tree, 'A');
-            MyQueue<KAryNode<char>> matchesB = FindMatches(tree, 'B');
-            MyQueue<KAryNode<char>> matchesC = FindMatches(tree, 'C');
-            MyQueue<KAryNode<char>> matchesD = FindMatches(tree, 'D');
+            // Find matches for the different values in the tree and place their
+            // values into enumerables using LINQ
+            IEnumerable<char> matchesA = FindMatches(tree, 'A').Select(m => m.Value);
+            IEnumerable<char> matchesB = FindMatches(tree, 'B').Select(m => m.Value);
+            IEnumerable<char> matchesC = FindMatches(tree, 'C').Select(m => m.Value);
+            IEnumerable<char> matchesD = FindMatches(tree, 'D').Select(m => m.Value);
 
             Console.WriteLine("Finding all matches for a k-ary tree with duplicate values.");
             Console.WriteLine();
-            Console.Write("Expecting 2 A's, found: ");
 
-            while (matchesA.Length > 0)
-            {
-                Console.Write($"{matchesA.Dequeue().Value} ");
-            }
+            // Print out the values taken from the nodes returned from FindMatches
+            Console.WriteLine($"Expecting 2 A's, found: [{string.Join(", ", matchesA)}]");
+            Console.WriteLine($"Expecting 2 B's, found: [{string.Join(", ", matchesB)}]");
+            Console.WriteLine($"Expecting 2 C's, found: [{string.Join(", ", matchesC)}]");
+            Console.WriteLine($"Expecting 3 D's, found: [{string.Join(", ", matchesD)}]");
 
-            Console.WriteLine();
-            Console.Write("Expecting 2 B's, found: ");
-
-            while (matchesB.Length > 0)
-            {
-                Console.Write($"{matchesB.Dequeue().Value} ");
-            }
-
-            Console.WriteLine();
-            Console.Write("Expecting 2 C's, found: ");
-
-            while (matchesC.Length > 0)
-            {
-                Console.Write($"{matchesC.Dequeue().Value} ");
-            }
-
-            Console.WriteLine();
-            Console.Write("Expecting 3 D's, found: ");
-
-            while (matchesD.Length > 0)
-            {
-                Console.Write($"{matchesD.Dequeue().Value} ");
-            }
-
-            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Please press any key to exit this demo...");
             Console.ReadKey();
@@ -68,24 +48,26 @@ namespace FindMatches
 
         /// <summary>
         /// For the provided k-ary tree, return all nodes containing the provided searchValue
-        /// to the caller in a collection
+        /// to the caller in the form of a collection.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="tree"></param>
-        /// <param name="searchValue"></param>
-        /// <returns></returns>
-        public static MyQueue<KAryNode<T>> FindMatches<T>(KAryTree<T> tree, T searchValue)
+        /// <typeparam name="T">The type of values held by nodes in the tree</typeparam>
+        /// <param name="tree">The tree to perform the search on</param>
+        /// <param name="searchValue">The search value to match against node values</param>
+        /// <returns>A generic collection of KAryNode references of type T</returns>
+        public static ICollection<KAryNode<T>> FindMatches<T>(KAryTree<T> tree, T searchValue)
         {
-            MyQueue<KAryNode<T>> matches = new MyQueue<KAryNode<T>>();
             MyQueue<KAryNode<T>> nodes = new MyQueue<KAryNode<T>>(tree.Root);
+            List<KAryNode<T>> matches = new List<KAryNode<T>>(tree.Count);
 
+            // Breadth-first traversal
             while (nodes.Length > 0)
             {
                 KAryNode<T> currentNode = nodes.Dequeue();
 
+                // The current node's value matches the searchValue! Add it to our list
                 if (currentNode.Value.Equals(searchValue))
                 {
-                    matches.Enqueue(currentNode);
+                    matches.Add(currentNode);
                 }
 
                 foreach (KAryNode<T> node in currentNode.Children)
