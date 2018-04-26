@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KAryTree", "..\..\Data_Stru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueue", "..\..\Data_Structures\StackAndQueue\StackAndQueue\StackAndQueue.csproj", "{3E47F900-A871-4D47-A264-E653E331FDF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMatchesTesting", "FindMatchesTesting\FindMatchesTesting.csproj", "{CBC17C58-5929-46A8-80A8-8E3E4CB56C34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3E47F900-A871-4D47-A264-E653E331FDF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E47F900-A871-4D47-A264-E653E331FDF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E47F900-A871-4D47-A264-E653E331FDF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC17C58-5929-46A8-80A8-8E3E4CB56C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC17C58-5929-46A8-80A8-8E3E4CB56C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC17C58-5929-46A8-80A8-8E3E4CB56C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC17C58-5929-46A8-80A8-8E3E4CB56C34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

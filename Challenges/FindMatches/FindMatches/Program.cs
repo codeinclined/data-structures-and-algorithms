@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace FindMatches
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
