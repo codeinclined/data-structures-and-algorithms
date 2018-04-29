@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
+
+[assembly: InternalsVisibleTo("HashTablesTesting")]
 
 namespace HashTables
 {
@@ -35,7 +38,7 @@ namespace HashTables
         /// <summary>
         /// The prime number used in the hashing algorithm to produce bucket indexes
         /// </summary>
-        public int PrimeFactor => 1019;
+        public static int PrimeFactor => 1019;
 
         /// <summary>
         /// Constructor for the HashTable class. Optionally takes in a 
