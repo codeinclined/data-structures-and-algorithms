@@ -22,3 +22,4 @@
 19. [KAryTree](/Data_Structures/KAryTree)
 20. [PrintLevelOrder](/Challenges/PrintLevelOrder)
 21. [FindAllMatches](/Challenges/FindAllMatches)
+22. [HashTables](/Data_Structures/HashTables)
