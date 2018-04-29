@@ -12,7 +12,8 @@ via the key type's ToString() method, adding all code points together,
 multiplying by a prime factor, and then bringing that value into the
 range of bucket indexes within the hash table. Collisions are handled
 by making each bucket a singly-linked list with nodes containing each
-entry's key and value.
+entry's key and value. Any .NET type can be used for keys and values
+through HashTable's generic implementation.
 
 ## Getting Started
 
@@ -41,7 +42,13 @@ provided in the
 
 ## Test Coverage
 
-A dotCover-generated coverage report can be found [here](/Data_Structures/HashTables/assets/HashTablesCoverage.html).
+Unit testing is available in the
+[HashTablesTesting project](/Data_Structures/KAryTree/HashTablesTesting)
+using xUnit (provided via a NuGet dependency). All tests were run using
+JetBrains' dotCover tool with 100% code coverage on the HashTable and
+BucketNode classes.
+
+![dotCover Screenshot](/Data_Structures/HashTables/assets/coverage.JPG)
 
 ## Complexity and Hash Collisions
 
