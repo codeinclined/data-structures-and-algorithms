@@ -6,7 +6,7 @@ using StackAndQueue;
 
 namespace TreeIntersection
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -67,7 +67,7 @@ namespace TreeIntersection
         /// <param name="treeA">The first binary tree</param>
         /// <param name="treeB">The second binary tree</param>
         /// <returns>Set of values contained by both trees as a collection</returns>
-        public static ICollection<T> TreeIntersection<T>(Tree<T> treeA, Tree<T> treeB)
+        public static IEnumerable<T> TreeIntersection<T>(Tree<T> treeA, Tree<T> treeB)
         {
             HashTable<T, int> hashTable = new HashTable<T, int>();
             MyQueue<BinaryTree.Node<T>> nodeQueue = new MyQueue<BinaryTree.Node<T>>(treeA.Root);
