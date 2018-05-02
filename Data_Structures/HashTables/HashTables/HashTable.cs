@@ -23,12 +23,12 @@ namespace HashTables
     /// should has a ToString() method that differentiates between instances in order to
     /// allow the hashing algorithm to produce useful hashes for keys</typeparam>
     /// <typeparam name="ValueT">The type of values used in each key/value pair</typeparam>
-    class HashTable<KeyT, ValueT>
+    public class HashTable<KeyT, ValueT>
     {
         /// <summary>
         /// Bucket array for each of the hashed key indexed linked lists
         /// </summary>
-        protected internal BucketNode<KeyT, ValueT>[] Buckets { get; set; }
+        internal BucketNode<KeyT, ValueT>[] Buckets { get; set; }
 
         /// <summary>
         /// The number of buckets allocated for the hash table
