@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeIntersection", "TreeIntersection\TreeIntersection.csproj", "{E4C134AC-F5AE-4863-A40B-F9E773805171}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTree", "..\..\Data_Structures\BinaryTree\BinaryTree\BinaryTree.csproj", "{D63F5AC0-8C53-4D67-A7F0-7E5A1A49CF31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashTables", "..\..\Data_Structures\HashTables\HashTables\HashTables.csproj", "{CBE13C17-80B6-492C-BBD2-D366957CDE97}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueue", "..\..\Data_Structures\StackAndQueue\StackAndQueue\StackAndQueue.csproj", "{F0598AAD-7581-4E90-BAC1-2792DC3280C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeIntersectionTesting", "TreeIntersectionTesting\TreeIntersectionTesting.csproj", "{21D3C67B-53BE-44D7-BD3E-B375AD03B60D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4C134AC-F5AE-4863-A40B-F9E773805171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C134AC-F5AE-4863-A40B-F9E773805171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C134AC-F5AE-4863-A40B-F9E773805171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C134AC-F5AE-4863-A40B-F9E773805171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D63F5AC0-8C53-4D67-A7F0-7E5A1A49CF31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D63F5AC0-8C53-4D67-A7F0-7E5A1A49CF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D63F5AC0-8C53-4D67-A7F0-7E5A1A49CF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D63F5AC0-8C53-4D67-A7F0-7E5A1A49CF31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE13C17-80B6-492C-BBD2-D366957CDE97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE13C17-80B6-492C-BBD2-D366957CDE97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE13C17-80B6-492C-BBD2-D366957CDE97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE13C17-80B6-492C-BBD2-D366957CDE97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0598AAD-7581-4E90-BAC1-2792DC3280C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0598AAD-7581-4E90-BAC1-2792DC3280C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0598AAD-7581-4E90-BAC1-2792DC3280C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0598AAD-7581-4E90-BAC1-2792DC3280C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21D3C67B-53BE-44D7-BD3E-B375AD03B60D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D3C67B-53BE-44D7-BD3E-B375AD03B60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D3C67B-53BE-44D7-BD3E-B375AD03B60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D3C67B-53BE-44D7-BD3E-B375AD03B60D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BDA6AF6-B111-4763-A7BE-D1426C8D0005}
+	EndGlobalSection
+EndGlobal
