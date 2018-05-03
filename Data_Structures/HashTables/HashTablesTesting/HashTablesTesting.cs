@@ -1,5 +1,6 @@
 using HashTables;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
@@ -62,10 +63,10 @@ namespace HashTablesTesting
         {
             // Arrange
             HashTable<double, int> table = new HashTable<double, int>();
-            table.Add(Math.PI, int.MaxValue);
+            table.Add(keyValue, int.MaxValue);
 
             // Act
-            (bool found, _) = table.Contains(Math.PI);
+            (bool found, _) = table.Contains(keyValue);
 
             // Assert
             Assert.True(found);
@@ -112,6 +113,60 @@ namespace HashTablesTesting
 
             // Assert
             Assert.True(found);
+        }
+
+        [Theory]
+        [ClassData(typeof(GetHashTestData))]
+        public void CanUseIndexerGetForExistingKey(double testKey)
+        {
+            // Arrange
+            HashTable<double, int> table = new HashTable<double, int>();
+            table.Add(testKey, int.MaxValue);
+
+            // Act
+            int actualValue = table[testKey];
+
+            // Assert
+            Assert.Equal(int.MaxValue, actualValue);
+        }
+
+        [Fact]
+        public void CannotUseIndexerGetForNonexistantKeys()
+        {
+            // Arrange
+            HashTable<double, int> table = new HashTable<double, int>();
+
+            // Assert
+            Assert.Throws<KeyNotFoundException>(() => table[Math.PI]);
+        }
+
+        [Theory]
+        [ClassData(typeof(GetHashTestData))]
+        public void CanUseIndexerSetToCreateKey(double testKey)
+        {
+            // Arrange
+            HashTable<double, int> table = new HashTable<double, int>();
+
+            // Act
+            table[testKey] = int.MaxValue;
+
+            // Assert
+            Assert.True(table.Contains(testKey).found);
+        }
+
+        [Theory]
+        [ClassData(typeof(GetHashTestData))]
+        public void CanUseIndexerSetToUpdateExistingKeyValue(double testKey)
+        {
+            // Arrange
+            HashTable<double, int> table = new HashTable<double, int>();
+            table.Add(testKey, int.MaxValue);
+
+            // Act
+            table[testKey] = int.MinValue;
+
+            // Assert
+            Assert.Equal(int.MinValue, table.Contains(testKey).value);
         }
     }
 }
