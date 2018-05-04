@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeftJoin", "LeftJoin\LeftJo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashTables", "..\..\Data_Structures\HashTables\HashTables\HashTables.csproj", "{F8F9DC92-0697-477F-8411-6159E932E0AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeftJoinTesting", "LeftJoinTesting\LeftJoinTesting.csproj", "{3BB197FB-6E9C-4F6B-9E77-B5262B0C5B79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F8F9DC92-0697-477F-8411-6159E932E0AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8F9DC92-0697-477F-8411-6159E932E0AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8F9DC92-0697-477F-8411-6159E932E0AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BB197FB-6E9C-4F6B-9E77-B5262B0C5B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB197FB-6E9C-4F6B-9E77-B5262B0C5B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB197FB-6E9C-4F6B-9E77-B5262B0C5B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB197FB-6E9C-4F6B-9E77-B5262B0C5B79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
