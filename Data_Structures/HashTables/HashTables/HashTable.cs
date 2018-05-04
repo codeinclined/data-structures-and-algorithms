@@ -31,6 +31,11 @@ namespace HashTables
         internal BucketNode<KeyT, ValueT>[] Buckets { get; set; }
 
         /// <summary>
+        /// Contains a listing of all keys held by the hash table
+        /// </summary>
+        public List<KeyT> Keys { get; } = new List<KeyT>();
+
+        /// <summary>
         /// The number of buckets allocated for the hash table
         /// </summary>
         public int BucketCount => Buckets.Length;
@@ -145,6 +150,7 @@ namespace HashTables
             // Push a new bucket node onto the bucket containing our new value
             int bucketIndex = GetHash(key);
             Buckets[bucketIndex] = new BucketNode<KeyT, ValueT>(key, value) { Next = Buckets[bucketIndex] };
+            Keys.Add(key);
         }
 
         /// <summary>

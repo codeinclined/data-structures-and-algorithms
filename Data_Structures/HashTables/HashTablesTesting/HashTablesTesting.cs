@@ -168,5 +168,16 @@ namespace HashTablesTesting
             // Assert
             Assert.Equal(int.MinValue, table.Contains(testKey).value);
         }
+
+        [Fact]
+        public void CanGetKeysAfterAddingKeyValuePairs()
+        {
+            // Arrange
+            HashTable<double, int> table = new HashTable<double, int>();
+            table.Add(Math.PI, int.MaxValue);
+
+            // Assert
+            Assert.Contains(Math.PI, table.Keys);
+        }
     }
 }
