@@ -2,7 +2,7 @@
 
 **Author:** Joshua Taylor <taylor.joshua.w@gmail.com>
 
-**Version:** 1.1.0
+**Version:** 1.2.0
 
 ## Description
 
@@ -67,6 +67,8 @@ adding key/value pairs to the hash table, looking up values by keys, and
 chaining of duplicate hashed indexes via linked lists.
 
 ## Change Log
+- 5.3.2018 [Joshua Taylor](mailto:taylor.joshua.w@gmail.com) - Added Keys list to
+HashTable class along with passing unit test.
 - 5.2.2018 [Joshua Taylor](mailto:taylor.joshua.w@gmail.com) - Added indexer to
 HashTable class with a setter and getter in support of the TreeIntersection
 whiteboard challenge. Refactored the Contains method. Wrote unit tests for new
