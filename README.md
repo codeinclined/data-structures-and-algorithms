@@ -25,3 +25,4 @@
 22. [HashTables](/Data_Structures/HashTables)
 23. [RepeatedWord](/Challenges/RepeatedWord)
 24. [TreeIntersection](/Challenges/TreeIntersection)
+25. [InsertionSort](/Sorting_Algorithms/InsertionSort)
