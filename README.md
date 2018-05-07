@@ -26,3 +26,4 @@
 23. [RepeatedWord](/Challenges/RepeatedWord)
 24. [TreeIntersection](/Challenges/TreeIntersection)
 25. [LeftJoin](/Challenges/LeftJoin)
+26. [InsertionSort](/Sorting_Algorithms/InsertionSort)
