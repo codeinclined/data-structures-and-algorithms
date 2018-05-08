@@ -27,3 +27,4 @@
 24. [TreeIntersection](/Challenges/TreeIntersection)
 25. [LeftJoin](/Challenges/LeftJoin)
 26. [InsertionSort](/Sorting_Algorithms/InsertionSort)
+26. [MergeSort](/Sorting_Algorithms/MergeSort)
