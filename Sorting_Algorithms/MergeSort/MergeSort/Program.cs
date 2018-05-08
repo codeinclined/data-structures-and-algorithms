@@ -2,7 +2,7 @@
 
 namespace MergeSort
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -53,7 +53,7 @@ namespace MergeSort
         /// <param name="midpoint">The pivot point for the merge</param>
         /// <param name="end">The ending index of the merged portion of the source array</param>
         /// <returns>Merged array based on ascending order comparisons</returns>
-        public static int[] Merge(int[] arrayToMerge, int start, int midpoint, int end)
+        internal static int[] Merge(int[] arrayToMerge, int start, int midpoint, int end)
         {
             // Worker array
             int[] mergedArray = new int[end - start + 1];
