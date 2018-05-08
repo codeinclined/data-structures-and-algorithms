@@ -50,6 +50,10 @@ Running the command line interface (CLI) application included in the Program
 class of the MergeSort project will provide a simple demonstration of
 merge sorts on arrays of integers.
 
+## Whiteboard Implementation
+
+![Whiteboard Photo](/assets/MergeSort.jpg)
+
 ## Change Log
 - 5.7.2018 [Joshua Taylor](mailto:taylor.joshua.w@gmail.com) - Initial release.
 All tests passing. 100% code coverage.
