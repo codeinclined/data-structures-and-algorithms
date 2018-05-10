@@ -7,7 +7,7 @@ namespace RadixSortTesting
     public class RadixSortTesting
     {
         /// <summary>
-        /// Provides three test cases for the RadixSort method. Asserts that
+        /// Provides four test cases for the RadixSort method. Asserts that
         /// each value in the sorted array is greater than or equal to the
         /// previous value (i.e., the array is in ascending order)
         /// </summary>
