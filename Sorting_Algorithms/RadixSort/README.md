@@ -1,4 +1,4 @@
-# Quick Sort
+# Radix Sort
 
 **Author:** Joshua Taylor <taylor.joshua.w@gmail.com>
 
